@@ -1,0 +1,648 @@
+
+/*
+	font-family: 'Over the Rainbow', cursive;
+	font-family: 'Amatic SC', cursive;
+*/
+/***************************************
+ FONT COLORS
+***************************************/
+.dark-green{
+	color:#374a2e !important;
+}
+
+.green{
+	color:#869d81 !important;
+}
+
+.yellow{
+	color:#e7f1d2 !important;
+}
+
+.gold{
+	color:#efd897 !important;	
+}
+
+.brown{
+	color:#4c4038 !important;	
+}
+
+.grey{
+     color:#d8ddd7 !important;   
+}
+
+.white{
+     color:#fff !important;   
+}
+
+p{
+    font-family: 'Pompiere';
+    font-size: 1.8em;
+}
+
+
+h1{
+	font-family: 'Alex Brush', cursive;
+	font-size:6em;
+}
+
+h2{
+	font-family: 'Alex Brush', cursive;
+	font-size:4em;
+}	
+
+h3{
+	
+}
+
+h4{
+    font-family: 'Pompiere';
+    font-size: 2.5em; 
+}
+
+h5{
+	font-family: 'Pompiere';
+    font-size: 2.5em; 
+	text-align: center;
+}
+
+
+
+@media screen and (max-width:480px){
+	h1{
+		font-size:4em; 
+	}
+}
+
+@media screen and (max-width:768px){
+	.invis-mobile{
+		display:none;	
+	}
+}
+
+/***************************************
+ NAVIGATION
+***************************************/
+nav{
+	position: fixed;
+	top:0px;
+	left:50%;
+	transform: translateX(-50%);
+	z-index:999;
+	width:283px;
+}
+
+nav a{
+	display:inline-block;	
+	padding: 9px 12px;
+	font-size: 1.5em;
+	text-align: center;
+	color:#fff;
+	transition: all .3s;
+	cursor: pointer;
+	font-weight:bold;
+}
+
+nav a:hover{
+	color:#efd897;
+	transition: all .3s;
+	//background-color:#4c4038;
+	text-decoration: none;
+}
+
+.nav-bg{
+	width:500px;
+	position: fixed;
+	top:0px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index:999;
+}
+
+.page-button, .scroll-top-button{
+	position: absolute;
+	bottom:5px;
+	left:50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	z-index:999;
+}
+
+.page-button i, .scroll-top-button i{
+	font-size:4em;	
+	position: relative;
+	top: 0;
+	color:#2b2b2b;
+}
+
+.page-button:hover i, .scroll-top-button:hover i{
+	animation: arrow .6s ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {top:0px;}
+    50% {top:7px;}
+	100% {top:0px;}
+}
+
+@media screen and (max-width:768px){
+	
+}
+
+/***************************************
+ SECTION STYLES
+***************************************/
+
+.section{
+	//min-height:100vh;
+	min-height:400px;
+	display: block;
+	position: relative;
+	padding-top:100px;
+	padding-bottom:170px;
+}
+
+.section-title{
+	text-align:center;
+    margin-bottom:80px;
+}
+
+.section-title h3{
+	margin-top:-20px;	
+    font-family: 'Alex Brush', cursive;
+	font-size:2.5em;
+}
+
+.section-subtitle{
+	text-align:center;
+}
+
+@media screen and (max-width:768px){
+	.section{
+		height:auto;
+		padding:120px 10px;
+		
+	}
+	.section .container{
+		position: relative;
+		top:0;
+		transform: translateY(0);
+
+	}
+}
+
+@media screen and (max-width:480px){
+	.section-title h3{
+		margin-top:-10px;	
+		font-family: 'Alex Brush', cursive;
+		font-size:2em;
+	}
+	.section{
+		padding-top:60px;	
+	}
+	
+}
+
+/***************************************
+ LANDING
+***************************************/
+#landing{
+	height:100vh;
+}
+
+#landing .container{
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+#landing img{
+	position: relative;
+	top:30px;
+	max-width:600px;
+	animation: branches 1s ease;
+}
+
+/* IMG ANIMATION */
+@keyframes branches {
+    from {
+        top: 550px;
+        opacity:0;
+    }
+    to {
+        top:30px;
+        opacity:1;
+    }
+}
+
+@media screen and (max-width:768px){
+	#landing img{
+		width:90%;	
+	}
+}
+
+/***************************************
+ OUR STORY
+***************************************/
+
+#our-story{
+	background-color:#869d81;
+	//color:#e7f1d2;
+}
+
+#our-story p{
+	color: 	#374a2e;
+	font-size:1.8em;
+	//text-align: center;
+}
+
+#our-story img{
+	margin-bottom:50px;	
+	max-width:350px;
+    width: 90%;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
+@media screen and (max-width:768px){
+	#our-story img{
+		max-width:400px;
+		width: 90%;
+		transform: translateX(-50%);
+		position: relative;
+		left: 50%;
+	}
+}
+
+
+/***************************************
+ EVENT DETAILS
+***************************************/
+
+#event-details .section-title{
+	//color:#374a2e;	
+}
+
+#event-details{
+	background-color:#d8ddd7;
+}
+
+#event-details a{
+	font-family: 'Pompiere';
+    font-size: 1.8em;
+    color:#333;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all .3s;
+}
+
+#event-details a:hover{
+     color:   #869d81;
+    transition: all .3s;
+}
+
+#event-details img{
+    //max-width: 350px;
+    float:right;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+#event-details img:hover{
+	opacity:.8;
+	transition: opacity .3s;
+}
+
+#event-details h4{
+     margin-top:15px;   
+}
+
+.button{
+	font-family: 'Pompiere';
+	font-size:1.8em;
+	padding:12px 25px 9px;
+	display:block;
+	cursor: pointer;
+}
+
+.hotel-button{
+	text-align: center;	
+	color:#869d81 !important;
+	background-color:transparent;
+	width:300px;
+	margin:70px auto 0;
+	text-decoration: none !important;
+	transition: all .3s;
+	border:solid 2px #869d81;
+    font-weight: normal !important;
+}
+
+.hotel-button:hover{
+	background-color:#869d81;
+	color:	#fff !important;
+	transition: all .3s;
+	//border-width: 6px;
+}
+
+#hotel-modal .modal-body{
+	padding:40px;	
+}
+
+#hotel-modal img{
+	float:right;
+	opacity:1;
+	transition: opacity .3s;
+}
+
+#hotel-modal a{
+     color:  #333 !important;
+    text-decoration: none !important;
+    transition: all .3s;
+}
+
+#hotel-modal a:hover{
+     color:  #869d81 !important;
+    transition: all .3s;
+}
+
+#hotel-modal img:hover{
+	opacity:.8;
+	transition: opacity .3s;
+}
+
+#hotel-modal .hotel-info{
+	margin-top:40px;	
+}
+
+#hotel-modal .modal-header{
+	background-color:#869d81;
+	color:#fff;
+    text-align: center;
+}
+
+#hotel-modal .modal-title{
+	font-family: 'Pompiere' !important;
+    font-size: 3em;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+@media screen and (max-width:992px){
+	#hotel-modal .hotel-info{
+		margin-top:-12px;	
+	}
+}
+
+@media screen and (max-width:768px){
+	#hotel-modal img{
+		float:none;	
+		margin:0 auto;
+	}
+	#hotel-modal .hotel-info{
+		margin-bottom:30px;	
+		text-align: center;
+		float:none !important;
+	}
+	#event-details{
+		text-align:center;	
+	}
+	#event-details .col-sm-6{
+		float:none !important;	
+	}
+	#event-details img{
+		float:none !important;
+		margin:0 auto 20px;; 
+	}
+}
+
+/***************************************
+ WEDDING PARTY
+***************************************/
+
+.bridesmaids h4, .groomsmen h4{
+     text-align: center;   
+}
+
+.thumbnails{
+    margin-top:20px; 
+    margin:0 auto;
+    width:248px;
+}
+
+.bridesmaids .pic-thumb, .groomsmen .pic-thumb{
+    display: inline-block;
+    width:70px;
+    height:70px;
+    background:#d8ddd7;
+    margin:7px 5px;
+    cursor: pointer;
+    vertical-align:top !important;
+}
+
+.groomsmen .pic-thumb.groom-center{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:5px 0;
+}
+
+@media screen and (max-width:768px){
+    .bridesmaids{
+        margin-bottom:30px;
+    }   
+}
+
+@media screen and (min-width:992px){
+    #wedding-party .container{
+         padding-left:150px;
+        padding-right:150px;
+    }
+}
+
+
+/*Wedding Party modals*/
+#bm-modal, #gm-modal{
+	text-align: center;	
+	
+}
+
+#bm-modal .modal-header, #gm-modal .modal-header{
+	background-color:#869d81;
+	color:#fff;
+}
+
+#bm-modal .modal-title, #gm-modal .modal-title{
+	font-family: 'Pompiere' !important;
+    font-size: 3em;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+#bm-modal h4, #gm-modal h4{
+	text-align: center;	
+	font-family: 'Pompiere', cursive;
+	font-size:3.5em;
+	margin-top:35px;
+    text-transform: uppercase;
+}
+
+#bm-modal p, #gm-modal p{
+	text-align: center;	
+	font-family: 'Pompiere', cursive;
+	font-size:1.7em !important;
+	position: relative;
+	top: -15px;
+}
+
+.people{
+	//position: relative;
+	height:530px;
+}
+
+.person{
+	position: absolute;
+	top:20px;
+	left:0px;
+	//transform: translateX(-50%);
+	opacity:0;
+	transition: opacity 1s;
+	width:100%;
+}
+
+.person img{
+	max-width:400px
+}
+
+.left-button{
+	position: absolute;
+	left:20px;
+	bottom:20px;
+	font-size:3em;
+	cursor: pointer;
+}
+
+.right-button{
+	position: absolute;
+	right:20px;
+	bottom:20px;
+	font-size:3em;
+	cursor: pointer; 
+}
+
+@media screen and (max-width:480px){
+	.people{
+		height:380px;	
+	}
+	.person img{
+		max-width:250px;	
+	}
+	.person h4{
+		font-size:2.7em !important; 	
+	}
+}
+
+/***************************************
+ RSVP
+***************************************/
+
+#rsvp{
+	background-color:#869d81;
+	
+}
+
+#rsvp form{
+	font-family: 'Pompiere';
+    font-size: 2em;
+    color:#374a2e;
+}
+
+#rsvp input, #rsvp select{
+	margin-bottom: 20px;	
+    background-color:#374a2e;
+    border:none;
+    color:white;
+    padding:5px 5px 0 5px;
+}
+
+#rsvp select{
+     //padding:5px 10px 2px;   
+}
+
+.align-right{
+	text-align: right;
+}
+
+#rsvp input.button{ 
+	margin:30px auto 0 !important;
+	font-size:25.2px !important;
+    padding:12px 25px 8px;
+    background-color:#869d81;
+    border:solid 2px #e7f1d2;
+    color:#e7f1d2;
+    transition: all .3s;
+}
+
+#rsvp input.button:hover{ 
+    background-color:#e7f1d2;
+    color:#869d81;
+    transition: all .3s;
+}
+
+@media screen and (max-width:768px){
+	#rsvp .col-sm-6{
+		text-align:center !important; 
+	}
+}
+
+
+
+/***************************************
+ GIFTS
+***************************************/
+
+#gifts{
+	background-color:#d8ddd7;
+	//padding:300px 0;
+}
+
+#gifts .section-title{
+	margin-bottom:180px;	
+}
+
+#gifts img{
+     opacity:0.7;  
+    transition: .3s;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#gifts img:hover{
+     opacity:1;
+    
+    transition: .3s;
+}
+
+.branch{
+	opacity:1 !important;
+	max-width:70%;
+	position: absolute;
+	right:0;
+	
+}
+
+@media screen and (max-width:992px){
+	#gifts img{
+		margin-bottom:50px;
+	}
+	#gifts{
+		padding-left:50px;
+		padding-right:50px;
+	}
+	
+}
+
+
